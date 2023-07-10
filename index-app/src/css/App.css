@@ -1,0 +1,172 @@
+@charset "utf-8";
+/********************** 초기세팅 **********************/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none
+}
+
+/* *********************** */
+header{
+  display: flex;
+  top: 0;
+  padding: 1% 10%;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+}
+nav{
+  display: flex;
+}
+nav a{
+  margin: 0 10px;
+  color: #000;
+}
+
+
+.pg1{
+  width: 100%;
+  height: 100%;
+  
+  margin-top: 100px;
+}
+.pg1_wrap{
+  padding: 10% 14% 10% 14%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background: url(../../public/images/macImage.jpg) no-repeat; */
+  background-size: 100%;
+  background-position: center;
+  
+}
+.my_pic{
+  width: 40%;
+  padding: 3vw;
+  box-shadow: 0 0 2px #555;
+  border-radius: 20px;
+  background: url(../../public/images/이력서사진3.jpg) no-repeat center/cover;
+  background-size: 100%;
+  background-position: 0 100%;
+  aspect-ratio: 1/1;
+}
+.my_pic img{
+  width: 100%;
+}
+.about_me{
+  width: 40%;
+  padding: 3vw;
+  box-shadow: 0 0 2px #555;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.about_me h1{
+  word-break: keep-all;
+}
+.about_me h2{
+  margin-top: 30px;
+  word-break: keep-all;
+}
+strong{
+  font-size: 30px;
+  text-shadow: 0 0 3px #ccc;
+}
+
+
+
+.pg2_wrap{
+  display: flex;
+  padding: 0 10%;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+.port_wrap{
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  box-shadow: 0 0 2px #555;
+  padding: 3vw;
+  border-radius: 20px;
+}
+.portbx{
+  width: 100%;
+  color: #000;
+}
+.portbx img{
+  width: 100%;
+  border-radius: 20px;
+}
+.portImg{
+  margin-bottom: 30px;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.portTitle{
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.portInfo{
+  word-break: keep-all;
+}
+.pg2Title{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 64px;
+}
+
+@media (max-width:800px) {
+  .my_pic{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .about_me{
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logo{
+    font-size: 20px;
+  }
+  nav a{
+    font-size: 12px;
+  }
+
+  .port_wrap{
+    width: 70%;
+  }
+  .portTitle{
+    font-size: 4vw;
+  }
+  .pg2Title{
+    font-size: 50px;
+  }
+}
